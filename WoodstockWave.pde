@@ -18,16 +18,16 @@ void setup()
 }
 
 int count;
-int size;
+int sz;
 
 void draw()
 {
   int count = 0;
   background(5, 255, 236);
   while (count <= 25) {
-    size = count * 20;
+    sz = count * 20;
     arcEnd = map(sin(movement + (maxArcEnd / 50 * count)), -1, 1, arcStart, maxArcEnd);
-    arc(width/2, height/2, size, size, arcStart, arcEnd);
+    arc(width/2, height/2, sz, sz, arcStart, arcEnd);
     count = count + 1;
   }
   movement = movement + speed;
