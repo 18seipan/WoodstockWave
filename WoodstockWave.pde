@@ -26,7 +26,7 @@ void draw()
   background(5, 255, 236);
   while (count <= 25) {
     size = count * 20;
-    arcEnd = map(sin(movement + (maxArcEnd / 30 * count)), -1, 1, arcStart, maxArcEnd);
+    arcEnd = map(sin(movement + (maxArcEnd / 50 * count)), -1, 1, arcStart, maxArcEnd);
     arc(width/2, height/2, size, size, arcStart, arcEnd);
     count = count + 1;
   }
